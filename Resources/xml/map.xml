@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<data>
+	<api>
+		<paretname><![CDATA[九龍區]]></paretname>
+		<longitude><![CDATA[22.313323]]></longitude>
+		<latitude><![CDATA[114.222047]]></latitude>
+		<titlename><![CDATA[觀塘總行]]></titlename>
+		<description><![CDATA[觀塘道392號創紀之城6期9樓全層//營業時間/星期一至五 09:00-18:00/星期六 09:00-13:00/星期日及公眾假期休息]]></description>
+	</api>
+	<api>
+		<paretname><![CDATA[九龍區]]></paretname>
+		<longitude><![CDATA[22.296978391638245]]></longitude>
+		<latitude><![CDATA[114.17146414518356]]></latitude>
+		<titlename><![CDATA[尖沙咀]]></titlename>
+		<description><![CDATA[彌敦道27-33號良士大廈2字樓206-207室//營業時間/星期一至五 10:00-19:00/星期六 10:00-19:00/星期日及公眾假期 10:00-19:00]]></description>
+	</api>
+	<api>
+		<paretname><![CDATA[九龍區]]></paretname>
+		<longitude><![CDATA[22.31821]]></longitude>
+		<latitude><![CDATA[114.169939]]></latitude>
+		<titlename><![CDATA[旺角]]></titlename>
+		<description><![CDATA[彌敦道636號永隆銀行中心4樓411-413及415室//營業時間/星期一至五 10:00-20:30/星期六 10:00-20:30/星期日及公眾假期 12:00-20:30]]></description>
+	</api>
+	<api>
+		<paretname><![CDATA[九龍區]]></paretname>
+		<longitude><![CDATA[22.296978391638245]]></longitude>
+		<latitude><![CDATA[114.17146414518356]]></latitude>
+		<titlename><![CDATA[尖沙咀]]></titlename>
+		<description><![CDATA[彌敦道27-33號良士大廈2字樓206-207室//營業時間/星期一至五 10:00-19:00/星期六 10:00-19:00/星期日及公眾假期 10:00-19:00]]></description>
+	</api>
+	<api>
+		<paretname><![CDATA[九龍區]]></paretname>
+		<longitude><![CDATA[22.321609172005402]]></longitude>
+		<latitude><![CDATA[114.21314835548401]]></latitude>
+		<titlename><![CDATA[九龍灣]]></titlename>
+		<description><![CDATA[德福廣場第二期6樓604B舖//營業時間/星期一至五 11:00-20:00/星期六 11:00-20:00/星期日及公眾假期 11:00-20:00]]></description>
+	</api>
+	<api>
+		<paretname><![CDATA[九龍區]]></paretname>
+		<longitude><![CDATA[22.31116780007476]]></longitude>
+		<latitude><![CDATA[114.22608733177185]]></latitude>
+		<titlename><![CDATA[觀塘]]></titlename>
+		<description><![CDATA[觀塘地鐵站觀塘廣場1樓105-6室//營業時間/星期一至五	10:30-20:00/星期六 10:30-20:00/星期日及公眾假期 10:00-19:00]]></description>
+	</api>
+		<api>
+		<paretname><![CDATA[香港區]]></paretname>
+		<longitude><![CDATA[22.282758]]></longitude>
+		<latitude><![CDATA[114.155679]]></latitude>
+		<titlename><![CDATA[中環]]></titlename>
+		<description><![CDATA[皇后大道中70號卡佛大廈17樓1708-9室//營業時間/星期一至五 10:30-19:30/星期六 09:30-18:30/星期日及公眾假期 09:30-18:30]]></description>
+	</api>
+	<api>
+		<paretname><![CDATA[香港區]]></paretname>
+		<longitude><![CDATA[22.280221222029507]]></longitude>
+		<latitude><![CDATA[114.1860044002533]]></latitude>
+		<titlename><![CDATA[銅鑼灣]]></titlename>
+		<description><![CDATA[百德新街2-20號恆隆中心6樓609-610室//營業時間/星期一至五 10:00-20:30/星期六 10:00-20:30/星期日及公眾假期 10:00-20:00]]></description>
+	</api>
+	<api>
+		<paretname><![CDATA[香港區]]></paretname>
+		<longitude><![CDATA[22.285994]]></longitude>
+		<latitude><![CDATA[114.216499]]></latitude>
+		<titlename><![CDATA[太古]]></titlename>
+		<description><![CDATA[英皇道1033A號惠安苑地下 3A 舖//營業時間/星期一至五 10:30-19:30/星期六 10:30-19:30/星期日及公眾假期 10:30-19:30]]></description>
+	</api>
+	
+	<api>
+		<paretname><![CDATA[新界區]]></paretname>
+		<longitude><![CDATA[22.280221222029507]]></longitude>
+		<latitude><![CDATA[114.1860044002533]]></latitude>
+		<titlename><![CDATA[荃灣]]></titlename>
+		<description><![CDATA[荃灣地鐵站南豐中心6樓649室//營業時間/星期一至五 10:00-20:00/星期六 10:00-20:00/星期日及公眾假期 10:00-20:00]]></description>
+	</api>
+	<api>
+		<paretname><![CDATA[新界區]]></paretname>
+		<longitude><![CDATA[22.382668592292443]]></longitude>
+		<latitude><![CDATA[114.18702363967896]]></latitude>
+		<titlename><![CDATA[沙田]]></titlename>
+		<description><![CDATA[沙田連城廣場7樓722-723號舖//營業時間/星期一至五 10:00-21:00/星期六 10:00-21:00/星期日及公眾假期 10:00-21:00]]></description>
+	</api>
+	<api>
+		<paretname><![CDATA[新界區]]></paretname>
+		<longitude><![CDATA[22.392885]]></longitude>
+		<latitude><![CDATA[113.976936]]></latitude>
+		<titlename><![CDATA[屯門]]></titlename>
+		<description><![CDATA[屯門市廣場第一期2樓2123-2125室//營業時間/星期一至五 10:00-21:00/星期六 10:00-21:00/星期日及公眾假期 10:00-21:00]]></description>
+	</api>
+		<api>
+		<paretname><![CDATA[新界區]]></paretname>
+		<longitude><![CDATA[22.444697799991296]]></longitude>
+		<latitude><![CDATA[114.0286660194397]]></latitude>
+		<titlename><![CDATA[元朗]]></titlename>
+		<description><![CDATA[元朗青山公路99號貿易中心6樓604室//營業時間/星期一至五 10:00-20:00/星期六 10:00-20:00/星期日及公眾假期 10:00-19:00]]></description>
+	</api>
+	<api>
+		<paretname><![CDATA[新界區]]></paretname>
+		<longitude><![CDATA[22.504629]]></longitude>
+		<latitude><![CDATA[114.128262]]></latitude>
+		<titlename><![CDATA[上水]]></titlename>
+		<description><![CDATA[上水新康街75號地下B舖 (龍琛路口)//營業時間/星期一至五 10:30-19:30/星期六 10:30-19:30/星期日及公眾假期 10:30-19:30]]></description>
+	</api>
+</data>
+

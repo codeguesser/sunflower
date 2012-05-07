@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<country>
+	<type><![CDATA[1]]></type>
+	<hksar><![CDATA[hksar_japan.xml]]></hksar>
+	<hkbno><![CDATA[hkbno_japan.xml]]></hkbno>
+	<mcsar><![CDATA[mcsar_japan.xml]]></mcsar>
+	<name><![CDATA[日本]]></name>
+	<detail><![CDATA[不須辦簽証，可停留期限為 90天]]></detail>
+	<detail><![CDATA[以上護照持有人有效日期必須為六個月或以上]]></detail>
+	<pdf><![CDATA[http://www.sunflower.com.hk/visa/Page04-05%E6%97%A5%E6%9C%AC.pdf]]></pdf>
+</country>

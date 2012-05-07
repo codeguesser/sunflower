@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/OpenGL/cclib
+END
+CCSprite.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/OpenGL/cclib/CCSprite.h
+END
+CCSprite.mm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/OpenGL/cclib/CCSprite.mm
+END
+Wrapper.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/OpenGL/cclib/Wrapper.h
+END
+Wrapper.mm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/OpenGL/cclib/Wrapper.mm
+END
+CCTexture.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/OpenGL/cclib/CCTexture.h
+END
+Texture2D.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/OpenGL/cclib/Texture2D.h
+END
+CCTexture.mm
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/OpenGL/cclib/CCTexture.mm
+END
+Texture2D.mm
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/OpenGL/cclib/Texture2D.mm
+END

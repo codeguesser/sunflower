@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="index,follow" name="robots" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="../pics/homescreen.gif" rel="apple-touch-icon" />
+<meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+<link href="../css/style.css" rel="stylesheet" media="screen" type="text/css" />
+<title>關於我們</title>
+<meta name="description" content="新華旅遊,旅行社,旅行,Travel,旅行團,Tour,自遊行,Package,機票,Air Ticket,酒店,Hotel" />
+<meta name="keywords" content="新華旅遊,旅行社,旅行,Travel,旅行團,Tour,自遊行,Package,機票,Air Ticket,酒店,Hotel" />
+</head>
+
+<body>
+
+<!--<div id="topbar">
+	<div id="leftnav">
+		<a href="../index.html"><img alt="home" src="../images/home.png" /></a></div>
+	<div id="title">
+		關於我們</div>
+</div>-->
+<div id="content">
+	<span class="graytitle">關於我們</span>
+	<ul class="pageitem">
+		<li class="textbox">
+<span class="header">公司簡介</span>
+新華旅遊始創於1974年，憑著進取熱誠的幹勁與不斷尋求新突破的宗旨，早已在旅遊界建立深厚根基，質素有口皆碑； 目前總行及分社遍佈港九、新界及澳門各地，成為業務發展最迅速的旅行社之一。 憑藉超卓服務新華旅遊更榮獲全球品牌認可權威組織～國際超級品牌(Superbrands International)頒發『香港超級品牌榮譽大獎』(2004)，評審過程是由香港著名廣告及市務專業人員組成的評審委員會，經過嚴格的審核評分，並根據機構的市場定位、品牌資歷、信譽、顧客擁戴程度及整體市場認受性評選為『超級品牌』，足證新華旅遊之團隊質素、形像、口碑，均得到消費者高度評價及全球一致讚賞，蜚聲國際。
+		</li>
+		<li class="textbox">
+<span class="header">新華旅遊宗旨</span>
+<ul>
+<li>
+服務範疇 應有盡有<br/>
+新華旅遊素以高質素旅遊及票務服務見稱。旅遊部除辦理前往世各地之長短線團隊； 更推出開心自助逍遙遊，讓旅客隨喜好調配時間安排愜意節目；並有專為公司團體或具有特殊旅遊目的人士而度身設計的行程。 新華旅遊的票務部提供世界各地航空公司之機票訂位及開票服務，成積斐然，為本港著名大企業所樂用的旅行社。 此外，本公司更有專人為顧客辦理簽證，代訂各國酒店房間等，效率一流。
+</li>
+<li>
+提昇質素 細意週到<br/>
+新華旅遊時刻以提昇旅遊品質及服務為宗旨，為顧客提供超值及最佳享受，令每個團友都有一個開心難忘的假期。 訓練有素，慇懃熱誠的員工事事以客為尊。新華並率先採用全電腦操作系統，為其專業服務效率更添實力後盾。 本公司更積極在港九各地增設更多分社，以應付日益增長的需求，方便不同區域的客戶。各款新華旅行團的行程均緊湊充實，將最具遊覽價值的名勝重點，全部展現閣下眼前。 沿途由專業領隊帶領，經驗導遊講解風光趣聞，令閣下充份領略賓至如歸的旅遊樂趣。
+</li>
+<li>
+創新氣象 開心至上<br/>
+新華旅遊精益求精，用象徵活力朝氣的向日葵為標誌，以無比信心邁向另一個新高峰，同時亦希望為團友帶來向日葵一樣燦爛歡欣的旅遊體驗。
+</li>
+</ul>
+		</li>
+	</ul>
+
+</div>
+<div id="footer">
+	<a href="http://www.sunflower.com.hk">Powered By Sunflower Travel</a></div>
+
+</body>
+
+</html>

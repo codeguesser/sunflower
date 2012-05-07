@@ -1,0 +1,884 @@
+//
+//  OpenPDF.m
+//  New_Projects
+//
+//  Created by chen cool on 11-9-21.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import "OpenPDF.h"
+#import "PDFScrollView.h"
+#import "MainView.h"
+//#import "pFunction.h"
+#import "facebook.h"
+#import "ASIHTTPRequest.h"
+int XX=0;
+extern int all;
+
+extern MainView *myMainView;
+
+@implementation OpenPDF
+@synthesize c_xml,c_name,c_type,c_price,c_pack;
+@synthesize DataArray,DataArray2,DataArray3,DataArray4,DataArray5,DataArray6,DataArray7,DataArray8;
+#define AppMainMenuImg_Dic				[NSHomeDirectory() stringByAppendingString:@"/Documents/"]
+
+
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad
+{
+	
+	
+	m_pAppDelegate = [[UIApplication sharedApplication] delegate];
+	
+	
+    [super viewDidLoad];
+	[self.navigationController.navigationBar setTintColor: [UIColor colorWithRed:1.0 green:78.0/255.0 blue:0.0 alpha:1.0]];
+	
+	if (all==0) {
+		[self dosomething1];
+	}
+	else {
+		[self dosomething2];
+	}
+    
+    _OpenPDF = [[OpenPDF alloc]initWithNibName:@"OpenPDF" bundle:nil];
+    _OpenPDF.c_xml=c_xml;
+    _OpenPDF.c_name=c_name;
+    _OpenPDF.c_price=c_price;
+    _OpenPDF.c_pack=c_pack;
+    _OpenPDF.c_type=c_type;
+}
+
+
+
+-(void)dosomething1
+{
+	
+	
+	myMainView.Tab2hiddenBtn.hidden=NO;
+	DataArray =[[NSMutableArray alloc] init];
+	DataArray2=[[NSMutableArray alloc] init];
+	DataArray3=[[NSMutableArray alloc] init];
+	DataArray4=[[NSMutableArray alloc] init];
+	DataArray5=[[NSMutableArray alloc] init];
+	DataArray6=[[NSMutableArray alloc] init];
+	DataArray7=[[NSMutableArray alloc] init];
+	DataArray8=[[NSMutableArray alloc] init];
+	
+	twoboyview=[[UIView alloc] init];
+	twoboyview.frame=CGRectMake(0, 0, 320, 460);
+	twoboyview.backgroundColor=[UIColor clearColor];
+	
+	
+	if ([c_type isEqualToString:@"0"])
+	{
+		NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+		NSString *path=[paths    objectAtIndex:0];
+		NSString *filename=[path stringByAppendingPathComponent:@"c_xml.plist"];
+		NSMutableArray *array=[[NSMutableArray alloc] initWithContentsOfFile:filename];
+		
+		
+		if (array!=nil) {
+			[self loadBookMark:nil];
+		}
+		for (int i=0; i<[array count]; i++) 
+		{
+			if ([[array objectAtIndex:i] isEqualToString:c_xml])
+			{
+				same=1;
+			}
+			else
+			{
+				same=0;
+			}
+			
+		}
+		
+	}
+	else {
+		NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+		NSString *path=[paths    objectAtIndex:0];
+		NSString *filename=[path stringByAppendingPathComponent:@"c_xml1.plist"];
+		NSMutableArray *array=[[NSMutableArray alloc] initWithContentsOfFile:filename];
+		
+		
+		if (array!=nil) {
+			[self loadBookMark:nil];
+		}
+		for (int i=0; i<[array count]; i++) {
+			if ([[array objectAtIndex:i] isEqualToString:c_xml])
+			{
+				same=1;
+			}
+			else
+			{
+				same=0;
+			}
+			
+		}
+	}
+	
+	
+	
+	
+	
+	UIImageView *topbar = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 320, 45)];
+	[topbar setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:[NSString stringWithFormat:@"topbar"] ofType:@"png"]]];
+	//topbar.backgroundColor = [UIColor lightGrayColor];
+	[self.view addSubview:topbar];
+	
+	UIImageView *footbar = [[UIImageView alloc]initWithFrame:CGRectMake(0, 412, 320, 48)];
+	footbar.backgroundColor=[UIColor blackColor];
+	[self.view addSubview:footbar];
+	
+	
+	UILabel *tittle = [[UILabel alloc]initWithFrame:CGRectMake(1, 2, 320, 45)];
+	tittle.text=c_pack;
+	tittle.textColor = [UIColor blackColor];
+	tittle.backgroundColor = [UIColor clearColor];
+	tittle.textAlignment = UITextAlignmentCenter;
+	tittle.font = [UIFont systemFontOfSize:20];
+	//[self.view addSubview:tittle];
+	[tittle release];
+	
+	UILabel *tittle1 = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 320, 45)];
+	tittle1.text=c_pack;
+	tittle1.textColor = [UIColor whiteColor];
+	tittle1.backgroundColor = [UIColor clearColor];
+	tittle1.textAlignment = UITextAlignmentCenter;
+	tittle1.font = [UIFont systemFontOfSize:20];
+	//[self.view addSubview:tittle1];
+	[tittle1 release];
+	
+	
+	UIButton *btnback = [[[UIButton buttonWithType:UIButtonTypeCustom] retain]autorelease];
+	[btnback addTarget:self action:@selector(aa:)forControlEvents:UIControlEventTouchUpInside];
+	[btnback setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"icon_back"] ofType:@"png"]] forState:UIControlStateNormal];
+	btnback.frame = CGRectMake(10,7,71,31);
+	[self.view addSubview:btnback];
+	
+	
+	
+	UIImageView *c_fav=[[UIImageView alloc]initWithFrame:CGRectMake(320-45+2,9+2,23,18)];
+	[c_fav setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"icon_my_fav"] ofType:@"png"]]];
+	[self.view addSubview:c_fav];
+	[c_fav release];
+	
+	
+	
+	UIButton *btnback1 = [[[UIButton buttonWithType:UIButtonTypeCustom] retain]autorelease];
+	[btnback1 addTarget:self action:@selector(send:)forControlEvents:UIControlEventTouchUpInside];
+	//[btnback1 setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"icon_my_fav"] ofType:@"png"]] forState:UIControlStateNormal];
+	btnback1.frame = CGRectMake(320-45-45,0,100,45);
+	//btnback1.backgroundColor=[UIColor redColor];
+	[self.view addSubview:btnback1];
+	
+	
+	[self.view addSubview:twoboyview];
+	
+	
+	//[myMainView startLoad];
+	
+	
+	UIWebView *m_pWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0.0, 45, 320.0, 480.0-64-45)];
+	[m_pWebView setDelegate:self];
+	
+	
+	[m_pWebView setOpaque:NO];
+	[m_pWebView setScalesPageToFit:YES];
+	
+	NSURL *temp_URL = [[NSURL alloc]initWithString:c_xml];
+	NSURLRequest *temp_URLRequest = [[NSURLRequest alloc] initWithURL:temp_URL];
+	[m_pWebView loadRequest:temp_URLRequest];
+	[self.view addSubview:m_pWebView];
+	[m_pWebView sizeToFit];
+	[m_pWebView setScalesPageToFit:YES];
+	[m_pWebView release];
+	
+	//[myMainView loadingStop];
+	
+}
+-(void)dosomething2
+{
+	DataArray =[[NSMutableArray alloc] init];
+	DataArray2=[[NSMutableArray alloc] init];
+	DataArray3=[[NSMutableArray alloc] init];
+	DataArray4=[[NSMutableArray alloc] init];
+	DataArray5=[[NSMutableArray alloc] init];
+	DataArray6=[[NSMutableArray alloc] init];
+	DataArray7=[[NSMutableArray alloc] init];
+	DataArray8=[[NSMutableArray alloc] init];
+	
+	//NSString *nowdate = [c_xml substringWithRange:NSMakeRange([c_xml length]-12,12)];
+	//NSString *nowdate = [c_xml substringWithRange:NSMakeRange([c_xml length]-12,12)];
+	
+	
+	if ([c_type isEqualToString:@"0"])
+	{
+		NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+		NSString *path=[paths    objectAtIndex:0];
+		NSString *filename=[path stringByAppendingPathComponent:@"c_xml.plist"];
+		NSMutableArray *array=[[NSMutableArray alloc] initWithContentsOfFile:filename];
+		
+		
+		if (array!=nil) {
+			[self loadBookMark:nil];
+		}
+		for (int i=0; i<[array count]; i++) 
+		{
+			if ([[array objectAtIndex:i] isEqualToString:c_xml])
+			{
+				same=1;
+			}
+			else
+			{
+				same=0;
+			}
+			
+		}
+		
+	}
+	else {
+		NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+		NSString *path=[paths    objectAtIndex:0];
+		NSString *filename=[path stringByAppendingPathComponent:@"c_xml1.plist"];
+		NSMutableArray *array=[[NSMutableArray alloc] initWithContentsOfFile:filename];
+		
+		
+		if (array!=nil) {
+			[self loadBookMark:nil];
+		}
+		for (int i=0; i<[array count]; i++) {
+			if ([[array objectAtIndex:i] isEqualToString:c_xml])
+			{
+				same=1;
+			}
+			else
+			{
+				same=0;
+			}
+			
+		}
+	}
+	
+	
+	
+	UIWebView *m_pWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0.0, 0, 320.0, 480.0-64-45)];
+	[m_pWebView setDelegate:self];
+	
+	
+	[m_pWebView setOpaque:NO];
+	[m_pWebView setScalesPageToFit:YES];
+	
+	NSURL *temp_URL = [[NSURL alloc]initWithString:c_xml];
+	NSURLRequest *temp_URLRequest = [[NSURLRequest alloc] initWithURL:temp_URL];
+	[m_pWebView loadRequest:temp_URLRequest];
+	[self.view addSubview:m_pWebView];
+	[m_pWebView sizeToFit];
+	[m_pWebView setScalesPageToFit:YES];
+	[m_pWebView release];
+	
+	
+}
+
+	
+-(void)loadBookMark:(id)sender
+{
+	
+	if ([c_type isEqualToString:@"0"])
+	{
+		NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+		NSString *path=[paths    objectAtIndex:0];
+		NSString *filename=[path stringByAppendingPathComponent:@"c_xml.plist"];
+		NSMutableArray *array=[[NSMutableArray alloc] initWithContentsOfFile:filename];
+		self.DataArray = array;
+		
+		
+		
+		NSArray *paths1=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+		NSString *path1=[paths1    objectAtIndex:0];
+		NSString *filename1=[path1 stringByAppendingPathComponent:@"c_name.plist"];
+		NSMutableArray *array1=[[NSMutableArray alloc] initWithContentsOfFile:filename1];
+		self.DataArray2 = array1;
+		
+		
+		NSArray *paths2=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+		NSString *path2=[paths2    objectAtIndex:0];
+		NSString *filename2=[path2 stringByAppendingPathComponent:@"c_price.plist"];
+		NSMutableArray *array2=[[NSMutableArray alloc] initWithContentsOfFile:filename2];
+		self.DataArray5 = array2;
+		
+		
+		NSArray *paths3=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+		NSString *path3=[paths3    objectAtIndex:0];
+		NSString *filename3=[path3 stringByAppendingPathComponent:@"c_pack.plist"];
+		NSMutableArray *array3=[[NSMutableArray alloc] initWithContentsOfFile:filename3];
+		self.DataArray6 = array3;
+	}
+	else {
+		NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+		NSString *path=[paths    objectAtIndex:0];
+		NSString *filename=[path stringByAppendingPathComponent:@"c_xml1.plist"];
+		NSMutableArray *array=[[NSMutableArray alloc] initWithContentsOfFile:filename];
+		self.DataArray3 = array;
+		
+		
+		
+		NSArray *paths1=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+		NSString *path1=[paths1    objectAtIndex:0];
+		NSString *filename1=[path1 stringByAppendingPathComponent:@"c_name1.plist"];
+		NSMutableArray *array1=[[NSMutableArray alloc] initWithContentsOfFile:filename1];
+		self.DataArray4 = array1;
+		
+		
+		NSArray *paths2=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+		NSString *path2=[paths2    objectAtIndex:0];
+		NSString *filename2=[path2 stringByAppendingPathComponent:@"c_price1.plist"];
+		NSMutableArray *array2=[[NSMutableArray alloc] initWithContentsOfFile:filename2];
+		self.DataArray7 = array2;
+		
+		
+		NSArray *paths3=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+		NSString *path3=[paths3    objectAtIndex:0];
+		NSString *filename3=[path3 stringByAppendingPathComponent:@"c_pack1.plist"];
+		NSMutableArray *array3=[[NSMutableArray alloc] initWithContentsOfFile:filename3];
+		self.DataArray8 = array3;
+	}
+
+	
+}
+
+
+
+-(void)send:(id)sender
+{
+	
+	UIActionSheet *menu = [[[UIActionSheet alloc] initWithTitle:nil
+													   delegate:self 
+											  cancelButtonTitle:@"Cancel" 
+										 destructiveButtonTitle:nil otherButtonTitles:
+							@"我的最愛",@"Facebook分享",@"Email分享",@"聯繫我們",nil]autorelease];
+	//menu.alpha=0.8;
+	menu.frame=CGRectMake(0, 0, 320, 480);
+	
+	menu.tag = 123;
+	UIView *c_uiview=[[UIView alloc]init];
+	c_uiview.frame=CGRectMake(0, 0, 320, 100);
+	c_uiview.backgroundColor=[UIColor blackColor];
+	//[menu addSubview:c_uiview];
+	
+	UILabel *c_img =[[UILabel alloc]initWithFrame:CGRectMake(0, 0, 320, 20)];
+	c_img.backgroundColor=[UIColor clearColor];
+	c_img.text=c_pack;
+	c_img.font = [UIFont boldSystemFontOfSize:16];
+	c_img.textAlignment = UITextAlignmentCenter;
+	[menu addSubview:c_img];
+	//[self.view addSubview:menu];
+//	[menu showInView:self.view];
+	
+	[menu showInView:m_pAppDelegate.theView.view];
+	
+}
+
+-(void)actionSheet:(UIActionSheet*)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	switch (buttonIndex) {
+		case 0:
+			NSLog(@"1");
+			
+			
+			[self SaveBookMark:nil];
+			break;
+			
+		case 1://facebook
+			NSLog(@"3");
+			
+			m_pAppDelegate = [[UIApplication sharedApplication] delegate];
+			
+			m_pAppDelegate.m_pShareText = c_name;
+			m_pAppDelegate.m_pSharepdf=c_xml;
+			
+			[facebook facebooklogin];
+			break;
+		case 2:
+			
+			
+			[self showPicker];
+			break;
+		
+		case 3://facebook
+			NSLog(@"4");
+			
+			c_telt=[[NSString alloc] initWithFormat:@"%@%@",@"2722",@"8888"];
+			
+			telAray = [c_telt componentsSeparatedByString:@" "];
+			str = @"tel://";
+			for(int i=0;i<[telAray count];i++)
+			{
+				tmpstr = [NSString stringWithString:str];
+				str = [NSString stringWithFormat:@"%@%@",tmpstr,[telAray objectAtIndex:i]];
+			}
+			
+			[[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+			break;
+			
+			
+		default:
+			break;
+	}
+}
+
+
+//email
+//============================================================================================
+
+
+-(void)showPicker
+{	
+	Class mailClass = (NSClassFromString(@"MFMailComposeViewController"));
+	if (mailClass != nil)
+	{
+		if ([mailClass canSendMail])
+		{
+			[self displayComposerSheet];
+		}
+	}
+}
+
+- (void)replaceWithNoAnimationOldSubview:(UIView *)oldView 
+						  WithNewSubview:(UIView *)newView 
+						   FromSuperview:(UIView *)superView {
+	if(superView == nil)
+		superView = newView.superview;
+	
+	if(oldView == nil) {
+		[superView addSubview:newView];
+		[superView bringSubviewToFront:newView];
+	}
+	
+	else {		
+		[newView setUserInteractionEnabled:YES];
+		[oldView setUserInteractionEnabled:NO];
+		
+		[superView insertSubview:newView aboveSubview:oldView];
+		[oldView removeFromSuperview];
+	}
+}
+
+
+- (void)PFreplaceSubview:(UIView *)oldView 
+			 withSubview:(UIView *)newView 
+		   fromSuperview:(UIView *)superView 
+			  transition:(NSString *)transition 
+			   direction:(NSString *)direction 
+				duration:(NSTimeInterval)duration 
+			    Delegate:(id)delegate {	
+	
+	// Set up the animation
+	CATransition *animation = [CATransition animation];
+	[animation setDelegate:delegate];
+	
+	
+	// Set the type and if appropriate direction of the transition, 
+	if (transition == kCATransitionFade) {
+		[animation setType:kCATransitionFade];
+	} else {
+		
+		[animation setType:transition];
+		[animation setSubtype:direction];
+	}
+	
+	// Set the duration and timing function of the transtion -- duration is passed in as a parameter, use ease in/ease out as the timing function
+	[animation setDuration:duration];
+	[animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];//kCAMediaTimingFunctionEaseInEaseOut
+	
+	[[superView layer] addAnimation:animation forKey:@"transitionViewAnimation"];
+	
+	
+	[self replaceWithNoAnimationOldSubview:oldView WithNewSubview:newView FromSuperview:superView];
+	
+}
+-(void)displayComposerSheet 
+{
+	pickers = [[MFMailComposeViewController alloc] init];
+	
+	//pickers.view.backgroundColor=[UIColor whiteColor];
+	pickers.mailComposeDelegate = self;
+	//pickers.view.backgroundColor=[UIColor clearColor];
+	[pickers setSubject:c_name];
+	NSArray *shop_narray1 = [[NSArray alloc] initWithObjects:@"",nil];
+	[pickers setToRecipients:shop_narray1];
+	
+	UIImage *drawImage = [self emailphoto];
+	
+	//drawImage.transform = CGAffineTransformMakeRotation(3.1415926*0.5);
+	
+	if(drawImage !=nil)
+	{	
+		//NSData *myData = UIImagePNGRepresentation(drawImage);
+		//[pickers addAttachmentData:myData mimeType:@"image/png" fileName:@"myphoto"];
+	}
+	NSString *emailBody =[[NSString alloc]initWithFormat:@"%@\n\n%@",c_xml,@"如有查詢，請聯絡熱線中心 2722-9260。"];	
+	//NSString *emailBody =c_xml;
+	[pickers setMessageBody:emailBody isHTML:NO];
+	//[self presentModalViewController:pickers animated:YES];
+	[pickers.view setFrame:CGRectMake(0, 0, 320, 460)];
+    
+    [self.view addSubview:pickers.view ];
+    
+//    [self PFreplaceSubview:_OpenPDF.view 
+//               withSubview:pickers.view 
+//             fromSuperview:self.view  
+//                transition:kCATransitionReveal 
+//                 direction:kCATransitionFromRight 
+//                  duration:0.3
+//                  Delegate:nil];
+
+//	[self StartTimer];
+	
+    
+//    UIViewController *XX = pickers;//[[UIViewController alloc]init];//pickers;
+    //[XX presentModalViewController:pickers animated:NO];
+    
+//    pickers.navigationBarHidden = NO;
+//
+//    
+//    [self.navigationController pushViewController:pickers.visibleViewController animated:YES];
+	
+//	[self presentModalViewController:pickers animated:NO];
+}
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error 
+{	
+	// Notifies users about errors associated with the interface
+	switch (result)
+	{
+		case MFMailComposeResultCancelled:
+			NSLog(@"Result: canceled");
+			break;
+		case MFMailComposeResultSaved:
+			NSLog(@"Result: saved");
+			break;
+		case MFMailComposeResultSent:
+			NSLog(@"Result: sent");
+			break;
+		case MFMailComposeResultFailed:
+			NSLog(@"Result: failed");
+			break;
+		default:
+			NSLog(@"Result: not sent");
+			break;
+	}
+    [pickers.view removeFromSuperview];
+    [pickers release];
+    pickers = nil;
+//    [pickers dismissModalViewControllerAnimated:NO];
+//    [pickers release];
+//    pickers = nil;
+//    [self.navigationController popViewControllerAnimated:NO];
+//    [self PFreplaceSubview:_OpenPDF.view 
+//               withSubview:pickers.view 
+//             fromSuperview:self.view 
+//                transition:kCATransitionReveal 
+//                 direction:kCATransitionFromLeft 
+//                  duration:0.3
+//                  Delegate:nil];
+//	[pickers.view removeFromSuperview];
+//	[self StartTimer2];
+	
+	//pickers.view.hidden=YES;
+	//self.view.hidden=YES;
+	//self.navigationController.view.hidden=YES;
+	
+	//[self dismissModalViewControllerAnimated:YES];
+	
+	//[scrollview setContentOffset:CGPointMake(320,0) animated:YES];
+}
+
+
+-(UIImage*)emailphoto
+{
+	UIGraphicsBeginImageContext(self.view.bounds.size);     //currentView 当前的view
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    CGContextRef context = UIGraphicsGetCurrentContext();
+	CGImageRef image = CGImageRetain(CGBitmapContextCreateImage(context));
+	image = CGImageCreateWithImageInRect(image,CGRectMake(0, 45, 320, 480-45-48-20));
+    UIImage *viewImage = [UIImage imageWithCGImage:image];
+	
+	CGImageRelease(image);
+    UIGraphicsEndImageContext();
+	return viewImage;
+}
+
+
+
+//====================================================================================================
+
+
+
+-(void)SaveBookMark:(id)sender
+{
+	//c_xml
+	//NSString *nowdate = [c_xml substringWithRange:NSMakeRange([c_xml length]-12,12)];
+	
+	
+	/*
+	[DataArray addObject:nowdate];
+	NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+	NSString *path=[paths    objectAtIndex:0];
+	NSString *filename=[path stringByAppendingPathComponent:@"c_name.plist"];    
+	[DataArray writeToFile:filename  atomically:YES];
+	 
+	 
+	 */
+	if (same==1) 
+	{
+		UIAlertView *netWorkError5 = 
+		[[UIAlertView alloc] 
+		 initWithTitle:@"您已經添加過此項目了" 
+		 message:@"" 
+		 delegate:self 
+		 cancelButtonTitle:@"確定" 
+		 otherButtonTitles:nil,nil];
+		[netWorkError5 show];
+		[netWorkError5 release];
+	}
+	else
+	{
+			UIAlertView *netWorkError5 = 
+			[[UIAlertView alloc] 
+			 initWithTitle:@"添加成功" 
+			 message:@"" 
+			 delegate:self 
+			 cancelButtonTitle:@"確定" 
+			 otherButtonTitles:nil,nil];
+			[netWorkError5 show];
+			[netWorkError5 release];
+		same=1;
+			
+			if ([c_type isEqualToString:@"0"])
+			{
+				[DataArray addObject:c_xml];
+				NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+				NSString *path=[paths    objectAtIndex:0];
+				NSString *filename=[path stringByAppendingPathComponent:@"c_xml.plist"];    
+				[DataArray writeToFile:filename  atomically:YES];
+				
+				
+				
+				[DataArray2 addObject:c_name];
+				NSArray *paths1=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+				NSString *path1=[paths1    objectAtIndex:0];
+				NSString *filename1=[path1 stringByAppendingPathComponent:@"c_name.plist"];    
+				[DataArray2 writeToFile:filename1  atomically:YES];
+				
+				
+				[DataArray5 addObject:c_price];
+				NSArray *paths2=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+				NSString *path2=[paths2    objectAtIndex:0];
+				NSString *filename2=[path2 stringByAppendingPathComponent:@"c_price.plist"];    
+				[DataArray5 writeToFile:filename2  atomically:YES];
+				
+				
+				[DataArray6 addObject:c_pack];
+				NSArray *paths3=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+				NSString *path3=[paths3    objectAtIndex:0];
+				NSString *filename3=[path3 stringByAppendingPathComponent:@"c_pack.plist"];    
+				[DataArray6 writeToFile:filename3  atomically:YES];
+			}
+			else {
+				[DataArray3 addObject:c_xml];
+				NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+				NSString *path=[paths    objectAtIndex:0];
+				NSString *filename=[path stringByAppendingPathComponent:@"c_xml1.plist"];    
+				[DataArray3 writeToFile:filename  atomically:YES];
+				
+				
+				
+				[DataArray4 addObject:c_name];
+				NSArray *paths1=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+				NSString *path1=[paths1    objectAtIndex:0];
+				NSString *filename1=[path1 stringByAppendingPathComponent:@"c_name1.plist"];    
+				[DataArray4 writeToFile:filename1  atomically:YES];
+				
+				
+				
+				[DataArray7 addObject:c_price];
+				NSArray *paths2=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+				NSString *path2=[paths2    objectAtIndex:0];
+				NSString *filename2=[path2 stringByAppendingPathComponent:@"c_price1.plist"];    
+				[DataArray7 writeToFile:filename2  atomically:YES];
+				
+				
+				[DataArray8 addObject:c_pack];
+				NSArray *paths3=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+				NSString *path3=[paths3    objectAtIndex:0];
+				NSString *filename3=[path3 stringByAppendingPathComponent:@"c_pack1.plist"];    
+				[DataArray8 writeToFile:filename3  atomically:YES];
+			}
+
+	}
+		
+		
+
+	
+     
+	//NSString *nowdate = [c_xml substringWithRange:NSMakeRange([c_xml length]-12,12)];
+	
+}
+
+-(IBAction)btnfoot:(UIButton*)sender
+{
+	if (sender.tag-18 != myMainView.app_state) {
+		[myMainView mainviewinitstate:sender.tag-18];
+		[myMainView mainviewdelete];
+	}
+}
+
+/*
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations.
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+*/
+
+- (void)didReceiveMemoryWarning {
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+    
+    // Release any cached data, images, etc. that aren't in use.
+}
+
+- (void)viewDidUnload {
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView { 
+	twoboyview.hidden=YES;
+	[myMainView loadingStop];
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView {
+	//NSString* str = [[NSString alloc] initWithFormat:@"%@",webView.request.URL];
+	[myMainView startLoad];
+} 
+
+
+- (void)dealloc {
+    
+	[btnfoot release];
+    [DataArray release];
+	[c_xml release];
+	[c_name release];
+    [_OpenPDF release];
+    _OpenPDF = nil;
+	[super dealloc];
+}
+
+
+#pragma mark -
+#pragma mark button methods
+-(void)aa:(id)sender
+{
+	[myMainView loadingStop];
+	[self.navigationController popViewControllerAnimated:YES];
+	if([m_pTimer isValid])
+	{
+		[m_pTimer invalidate];
+	}
+	m_pTimer = nil;
+	if (pickers) {
+		[pickers.view removeFromSuperview];
+		[pickers release];
+		pickers=nil;
+		
+	}
+	
+}
+
+
+
+
+-(void)AnimetionUpdate
+{
+	
+	XX++;
+	if (XX<26) {
+		if (XX%1==0) {
+			pickers.view.frame=CGRectMake(0, 500-20*XX, 320, 480-48);
+		
+		}
+	}
+	
+}
+
+
+
+-(void)DestroyTimer
+{
+	if(m_pTimer)
+	{
+		if([m_pTimer isValid])
+		{
+			[m_pTimer invalidate];
+		}
+		
+		m_pTimer = nil;
+	}
+}
+
+
+
+-(void)StartTimer
+{
+	XX=0;
+	
+	[self DestroyTimer];
+	m_pTimer = [NSTimer scheduledTimerWithTimeInterval:0.016 target:self selector:@selector(AnimetionUpdate) userInfo:nil repeats:YES];
+}
+
+
+
+-(void)AnimetionUpdate2
+{
+	
+	XX++;
+	if (XX<26) {
+		if (XX%1==0) {
+			pickers.view.frame=CGRectMake(0, 20*XX, 320, 480-48);
+		
+		}
+	}
+	
+}
+
+
+
+-(void)DestroyTimer2
+{
+	if(m_pTimer)
+	{
+		if([m_pTimer isValid])
+		{
+			[m_pTimer invalidate];
+		}
+		m_pTimer = nil;
+	}
+	
+}
+
+
+
+-(void)StartTimer2
+{
+	XX=0;
+	
+	[self DestroyTimer2];
+	m_pTimer = [NSTimer scheduledTimerWithTimeInterval:0.016 target:self selector:@selector(AnimetionUpdate2) userInfo:nil repeats:YES];
+}
+
+
+@end

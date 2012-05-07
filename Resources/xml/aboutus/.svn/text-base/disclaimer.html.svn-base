@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="index,follow" name="robots" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="../pics/homescreen.gif" rel="apple-touch-icon" />
+<meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+<link href="../css/style.css" rel="stylesheet" media="screen" type="text/css" />
+<title>關於我們</title>
+<meta name="description" content="新華旅遊,旅行社,旅行,Travel,旅行團,Tour,自遊行,Package,機票,Air Ticket,酒店,Hotel" />
+<meta name="keywords" content="新華旅遊,旅行社,旅行,Travel,旅行團,Tour,自遊行,Package,機票,Air Ticket,酒店,Hotel" />
+</head>
+
+<body>
+
+<!--<div id="topbar">
+	<div id="leftnav">
+		<a href="../index.html"><img alt="home" src="../images/home.png" /></a></div>
+	<div id="title">
+		免責聲明</div>
+</div>-->
+<div id="content">
+	<span class="graytitle">免責聲明</span>
+	<ul class="pageitem">
+		<li class="textbox">
+<span class="header">關於本網站之內容</span>
+用戶瀏覽及使用本網站，即代表用戶經已確認及接納須就使用本網站承擔風險。對於任何因使用、瀏覽、無法使用本網站或購買產品/服務而產生的直接、間接、附帶、相應而生或懲罰性的損害或有關損失利潤或損失收益的損害賠償，sunflower.com.hk 概不承擔任何責任。<br>
+ 
+在不影響前文規定的前提下，本網站及本網站所載任何資料及材料均按其「顯示時的狀況」而提供，不附帶任何無論是明示或隱含性的保証，包括但不限於有關擁有權、質量、適銷性、對特定用途的適用性、私隱或不侵權的隱含保証或隱含條款。<br>
+ 
+sunflower.com.hk 對於本網站所載內容的任何錯誤或遺漏概不承擔任何責任或義務。對於使用、瀏覽或於本網站購買產品/服務所產生的任何損害或傷害、或任何故障、誤差、遺漏、中斷、刪除、缺損、操作或傳輸延誤、電腦病毒、電訊線路故障、傳輸資訊被竊取、軟件或硬件問題（包括但不限於數據損失或相容性問題）、盜竊、網頁被毀壞或更改、或任何違反合約、侵權行為、疏忽或任何由於使用、瀏覽或於本網頁購買產品/服務或向本網站或從本網站上載、下載或載錄任何數據、文字、圖像或其他材料或資料而直接或間接產生的任何其他投訴，sunflower.com.hk概不負責，亦不會就此承擔任何責任。
+
+		</li>
+		<li class="textbox">
+<span class="header">關於用戶提供之內容</span>
+<ul>
+<li>
+用戶提供或載錄之內容，完全未經 sunflower.com.hk 事先編審及修訂，sunflower.com.hk 絕不保證其完全正確無誤，或對其質素作任何保證。用戶須對通過本網上載、張貼、電郵或以其他方式傳送之內容負全部責任。瀏覽本網時或會接觸不雅或令人不快之內容，亦概與 sunflower.com.hk無關。<br>
+ 
+一切由用戶提供或載錄之內容以引致任何意外、疏忽、合約毀壞、誹謗、版權或知識產權侵犯及其所造成的損失（包括因下載而感染電腦病毒），sunflower.com.hk 概不負責，亦不承擔任何法律責任。任何透過 sunflower.com.hk 網站而連接及得到之資訊、產品及服務，sunflower.com.hk概不負責，亦不負上任何法律責任。<br>
+ 
+除特別註明外，本網所有內容並不反映任何 sunflower.com.hk 之意見。
+
+</li>
+
+</ul>
+		</li>
+		<li class="textbox">
+<span class="header">關於連線網站之內容</span>
+<ul>
+<li>
+本網頁可能載有通往其他網址及網頁的鏈結。每當用戶啟動任何此等鏈結，例如點選任何廣告客戶的橫幅廣告，用戶即已離開了本網址；而用戶在離開本網址後向任何其他團體提供的任何個人資料或任何其他資料，一概不在 sunflower.com.hk 的管控範圍內。而 sunflower.com.hk 保留權力就有關的資料查閱，向用戶收取合理的費用。 
+</li>
+
+</ul>
+		</li>
+	</ul>
+
+</div>
+<div id="footer">
+	<a href="http://www.sunflower.com.hk">Powered By Sunflower Travel</a></div>
+
+</body>
+
+</html>

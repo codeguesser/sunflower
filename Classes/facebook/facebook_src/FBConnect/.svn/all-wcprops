@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/facebook/facebook_src/FBConnect
+END
+FBFeedDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/facebook/facebook_src/FBConnect/FBFeedDialog.h
+END
+FBSession.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/facebook/facebook_src/FBConnect/FBSession.h
+END
+FBLoginButton.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/facebook/facebook_src/FBConnect/FBLoginButton.h
+END
+FBLoginDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/facebook/facebook_src/FBConnect/FBLoginDialog.h
+END
+FBPermissionDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/facebook/facebook_src/FBConnect/FBPermissionDialog.h
+END
+FBRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/facebook/facebook_src/FBConnect/FBRequest.h
+END
+FBConnect.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/facebook/facebook_src/FBConnect/FBConnect.h
+END
+FBConnectGlobal.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/facebook/facebook_src/FBConnect/FBConnectGlobal.h
+END
+FBStreamDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/facebook/facebook_src/FBConnect/FBStreamDialog.h
+END
+FBDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sunflower/!svn/ver/7/trunk/sunflower/Classes/facebook/facebook_src/FBConnect/FBDialog.h
+END

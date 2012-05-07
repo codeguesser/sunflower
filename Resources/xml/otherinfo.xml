@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='utf-8'?>
+<otherinfo>
+<!-- 1 日韓台 --> 
+	<area>
+		
+		<country>
+            <name>日韓台</name>
+			<name1>日本</name1>
+			<image>japan.jpg</image>
+			<content>100-110 伏特，使用兩腳扁腳插頭</content>
+			<detail>otherinfo/japan.html</detail>
+		</country>
+		<country>
+            <name>日韓台</name>
+			<name1>韓國</name1>
+			<image>korea.jpg</image>
+			<content>220 伏特，大部份插頭為兩腳圓插</content>
+			<detail>otherinfo/korea.html</detail>
+		</country>
+		<country>
+            <name>日韓台</name>
+			<name1>台灣</name1>
+			<image>taiwan.jpg</image>
+			<content>110 伏特，大部份插頭為兩腳扁插</content>
+			<detail>otherinfo/taiwan.html</detail>
+		</country>
+	</area>
+	
+<!-- 2 中國 --> 
+	<area>
+		
+		<country>
+            <name>中國</name>
+			<name1>中國</name1>
+			<image>china.jpg</image>
+			<content>100-110 伏特，使用兩腳扁腳插頭</content>
+			<detail>otherinfo/china.html</detail>
+		</country>
+	</area>
+
+<!-- 3 東南亞 --> 
+	<area>
+		
+		<country>
+            <name>東南亞</name>
+			<name1>泰國</name1>
+			<image>thailand.jpg</image>
+			<content>220 伏特，大部份插頭為兩腳扁插</content>
+			<detail>otherinfo/thailand.html</detail>
+		</country>
+		<country>
+            <name>東南亞</name>
+			<name1>馬星</name1>
+			<image>malaysia.jpg</image>
+			<content>220 伏特，大部份插頭為三腳方插</content>
+			<detail>otherinfo/malaysia.html</detail>
+		</country>
+		<!--
+		<country>
+			<name>新加坡</name>
+			<image>images/location/singapore.jpg</image>
+			<content>220 伏特，大部份插頭為三腳方插</content>
+			<detail>otherinfo/singapore.html</detail>
+		</country>
+		-->
+		<country>
+            <name>東南亞</name>
+			<name1>柬埔寨</name1>
+			<image>cambodia.jpg</image>
+			<content>220 伏特，大部份插頭為三腳方插</content>
+			<detail>otherinfo/cambodia.html</detail>
+		</country>
+		<country>
+            <name>東南亞</name>
+			<name1>菲律賓</name1>
+			<image>philippines.jpg</image>
+			<content>220 伏特，大部份插頭為三腳方插</content>
+			<detail>otherinfo/philippines.html</detail>
+		</country>
+		<country>
+            <name>東南亞</name>
+			<name1>印尼</name1>
+			<image>indonesia.jpg</image>
+			<content>220 伏特，大部份插頭為三腳方插</content>
+			<detail>otherinfo/indonesia.html</detail>
+		</country>
+		<country>
+            <name>東南亞</name>
+			<name1>汶萊</name1>
+			<image>brunei.jpg</image>
+			<content>220 伏特，大部份插頭為三腳方插</content>
+			<detail>otherinfo/brunei.html</detail>
+		</country>
+		<country>
+            <name>東南亞</name>
+			<name1>越南</name1>
+			<image>vietnam.jpg</image>
+			<content>220 伏特，大部份插頭為兩腳扁插</content>
+			<detail>otherinfo/vietnam.html</detail>
+		</country>
+		<!--
+		<country>
+			<name>緬甸</name>
+			<image>images/location/Myanmar.jpg</image>
+			<content>220 伏特，大部份插頭為三腳方插</content>
+			<detail>otherinfo/Myanmar.html</detail>
+		</country> -->
+	</area>
+
+<!-- 4 長線 --> 
+	<area>
+	
+		<country>
+            <name>長線</name>
+			<name1>東歐</name1>
+			<image>easteurope.jpg</image>
+			<content>220 伏特，使用兩幼腳圓腳插頭</content>
+			<detail>otherinfo/easteurope.html</detail>
+		</country>
+		<country>
+            <name>長線</name>
+			<name1>西歐</name1>
+			<image>europe.jpg</image>
+			<content>220 伏特，使用兩幼腳圓腳插頭</content>
+			<detail>otherinfo/europe.html</detail>
+		</country>
+		<country>
+            <name>長線</name>
+			<name1>北歐</name1>
+			<image>northeurope.jpg</image>
+			<content>220 伏特，使用兩幼腳圓腳插頭</content>
+			<detail>otherinfo/NorthEurope.html</detail>
+		</country>
+		<country>
+            <name>長線</name>
+			<name1>西葡</name1>
+			<image>spain.jpg</image>
+			<content>220 伏特，使用兩幼腳圓腳插頭</content>
+			<detail>otherinfo/Spain.html</detail>
+		</country>
+		<country>
+            <name>長線</name>
+			<name1>地中海</name1>
+			<image>mediterranean.jpg</image>
+			<content>220 伏特，使用兩幼腳圓腳插頭</content>
+			<detail>otherinfo/mediterranean.html</detail>
+		</country>
+		<country>
+            <name>長線</name>
+			<name1>以色列</name1>
+			<image>israel.jpg</image>
+			<content>220 伏特，使用兩幼腳圓腳插頭</content>
+			<detail>otherinfo/israel.html</detail>
+		</country>
+		<country>
+            <name>長線</name>
+			<name1>杜拜</name1>
+			<image>dubai.jpg</image>
+			<content>220 伏特，大部份插頭為三腳方插</content>
+			<detail>otherinfo/dubai.html</detail>
+		</country>
+		<country>
+            <name>長線</name>
+			<name1>印度</name1>
+			<image>india.jpg</image>
+			<content>220 伏特，使用兩腳插頭</content>
+			<detail>otherinfo/india.html</detail>
+		</country>
+		<!--
+		<country>
+			<name>澳紐</name>
+			<image>images/location/australia.jpg</image>
+			<content>220 伏特，大部份插頭為三腳扁身插頭</content>
+			<detail>otherinfo/australia.html</detail>
+		</country>
+		-->
+		<country>
+            <name>長線</name>
+			<name1>俄羅斯</name1>
+			<image>russia.jpg</image>
+			<content>220 伏特，使用兩幼腳圓腳插頭</content>
+			<detail>otherinfo/russia.html</detail>
+		</country>
+		<country>
+            <name>長線</name>
+			<name1>南非</name1>
+			<image>southafrica.jpg</image>
+			<content>220 伏特，大部份插頭為粗身三孔圓型</content>
+			<detail>otherinfo/southafrica.html</detail>
+		</country>
+		
+		<country>
+            <name>長線</name>
+			<name1>北非突尼西亞</name1>
+			<image>northafrica.jpg</image>
+			<content>220 伏特，大部份插頭為粗身三孔圓型</content>
+			<detail>otherinfo/northafrica.html</detail>
+		</country>
+		
+		<country>
+            <name>長線</name>
+			<name1>美國</name1>
+			<image>usa.jpg</image>
+			<content>220 伏特，使用兩幼腳圓腳插頭</content>
+			<detail>otherinfo/USA.html</detail>
+		</country>
+	</area>
+
+
+</otherinfo>

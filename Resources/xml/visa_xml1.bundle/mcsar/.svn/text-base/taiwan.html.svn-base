@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="index,follow" name="robots" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="../pics/homescreen.gif" rel="apple-touch-icon" />
+<meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+<link href="../css/style.css" rel="stylesheet" media="screen" type="text/css" />
+<title>香港特區護照 - 台灣</title>
+<meta name="description" content="新華旅遊,旅行社,旅行,Travel,旅行團,Tour,自遊行,Package,機票,Air Ticket,酒店,Hotel" />
+<meta name="keywords" content="新華旅遊,旅行社,旅行,Travel,旅行團,Tour,自遊行,Package,機票,Air Ticket,酒店,Hotel" />
+</head>
+
+<body>
+
+<div id="topbar">
+	
+</div>
+<div id="tributton">
+	<div style="padding:7px 0px 0px;margin: 0px auto; overflow: auto;width:280px">
+		<a href="../hksar/taiwan.html"><img src="../images/hksar2.png" height="27"/></a><a href="../hkbno/taiwan.html"><img src="../images/hkbno2.png" height="27"/></a><a href="#"><img src="../images/mcsar1.png" height="27"/></a></div>
+</div>
+<div id="content">
+	<span class="graytitle">台灣簽証須知</span>
+	<ul class="pageitem">
+		<li class="textbox">
+		
+		<span class="header">簽証及期限</span>
+		<ul>
+			<li>凡香港或澳門出生之華裔人士持 香港 BN(O)香港特區護照、澳門特區護照 而護照上有齊出生年、月、日又或曾於 1983 年(即民國 72 年)後到過台灣者, 均可選擇做網上簽證申請</li>
+			<li>小童必須持有獨立護照才可申請</li>
+			<li>如護照上沒有月、日人仕，需連同聲明書、回鄉咭及特區護照副本申請</li>
+			<li>小童必須持有獨立護照才可申請</li>
+			<li>申請人護照或身份証上必須有中文姓名</li>
+			<li>申請人曾經持有台灣身份者不能辦理落地簽証</li>
+			<li>自行辦理落地簽証人仕而不是香港出生，必須持有蓋有入境紀錄之舊証或出入境証明書</li>
+			<li>請注意簽證只可停留 30 天，不能延期</li>
+			<li>請注意落地簽證不適用於曾被拒絕申請入台証者</li>
+			<li>所有自行辦理網上簽證人仕，必須列印確應書携帶入境</li>
+			<li>小童必須持有獨立護照才可申請</li>
+			<li>小童必須持有獨立護照才可申請</li>
+		</ul>
+
+		<span class="header">網上簽證所需資料</span>
+		<ul>
+			<li>香港身份証 COPY</li>
+			<li>護照正本(需要有效 6 個月或以上)</li>
+			<li>舊台灣簽證 COPY (若有的話)</li>
+			<li>簽証及收續費$150 元</li>
+		</ul>
+		
+		<span class="header">落地簽証所需資料</span>
+		<ul>
+			<li>香港身份証正本</li>
+			<li>護照(需要有效 6 個月或以上)</li>
+			<li>舊台灣簽證正本(必須有入境記錄) </li>
+			<li>費用 300 元新台幣</li>
+		</ul>
+		
+		</li>
+	</ul>
+	
+	<ul class="pageitem">
+		<li class="menu">
+		<a class="noeffect" href="http://www.sunflower.com.hk/visa/Page17-18%E5%8F%B0%E7%81%A3.pdf">
+		<img alt="pdf" src="../thumbs/pdf.png" /><span class="name">下載更多資料 (香港居民)</span><span class="arrow"></span></a></li>
+		<li class="menu">
+		<a class="noeffect" href="http://www.sunflower.com.hk/visa/Page19%E5%8F%B0%E7%81%A3.pdf">
+		<img alt="pdf" src="../thumbs/pdf.png" /><span class="name">下載更多資料 (持外國護照之人仕)</span><span class="arrow"></span></a></li>
+	</ul>
+
+</div>
+<div id="footer">
+	<a href="http://www.sunflower.com.hk">Powered By Sunflower Travel</a></div>
+
+</body>
+
+</html>
